@@ -1,0 +1,185 @@
+﻿@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700');
+* {padding: 0; margin: 0; box-sizing: border-box; font-family: 'Roboto', sans-serif;}
+body {
+	background-image: url("img/backg.png");
+	background-size: cover;
+}
+.playerStats{
+	position: absolute;
+	left: 350px; /* Default: 350px */
+	bottom: 20px; /* Default: 20px */
+	/*bottom: 20px; /* Default: 20px */
+
+	left: 87.0%; /* (18.2% Right Side of Map) | (82.0% Right Side of Screen) | (2.7% Above Map)  */
+	/*left: 82.0%; /* (18.2% Right Side of Map) | (82.0% Right Side of Screen) | (2.7% Above Map)  */
+	bottom: 1.85; /* (1.85% Default-Fix for all 16:9 resolutions) | (21.0% Above Map) */
+}
+
+.carStats{
+	position: absolute;
+	right: 50px;
+	bottom: 50px;
+	display: none;
+}
+
+.status{
+	display: inline-block;
+	height: 200px;
+	width: 195px;
+	position: relative;
+	justify-content: flex-start;
+}
+
+.mainstat {
+	width: 30%;
+}
+
+.sidestats {
+	width: 70%;
+}
+
+.upbar {
+	width: 100%;
+	height: 50%;
+}
+
+.lowbar {
+	display: flex;
+	position: relative;
+	height: 50%;
+	justify-content: flex-start;
+}
+
+.upbarstat {
+	height: 50%;
+}
+
+.vert-stathunger{
+	width: 45px;
+	height: 45px;
+	position: relative;
+	overflow: hidden;
+	border-radius: 50%;
+	margin-bottom: 7px;
+	left: 65%;
+	text-align: center;
+	box-shadow: 0 0 8px #000000;
+}
+
+.vert-statwater{
+	width: 45px;
+	height: 45px;
+	position: relative;
+	overflow: hidden;
+	border-radius: 50%;
+	left: 60%;
+	text-align: center;
+	box-shadow: 0 0 8px #000000;
+}
+
+.vert-statheart{
+	width: 90px;
+	height: 90px;
+	position: relative;
+	overflow: hidden;
+	border-radius: 50%;
+	box-shadow: 0 0 8px #000000;
+}
+
+.vert-statheart .bg{
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	transition: height 0.85s ease-in;
+}
+
+.vert-statheart .icon i{
+	position: absolute;
+	top: 50%;
+	left: 50%;	
+
+	transform: translate(-50%, -50%);
+}
+
+.vert-statheart img{
+	position: absolute;
+	left: 50%;
+	width: 50px;
+	height: 50px;
+	background-color: antiquewhite;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.vert-statheart span{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+
+.vert-statwater .bg{
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+}
+
+.vert-statwater .icon i{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);	
+}
+
+.vert-statwater img{
+	width: 50%;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.vert-statwater span{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.vert-stathunger .bg{
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+}
+
+.vert-stathunger .icon i{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);	
+}
+
+.vert-stathunger img{
+	width: 50%;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.vert-stathunger span{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+#gas{
+	position: absolute;
+	right: 100px;
+	bottom: 50px;
+
+}
